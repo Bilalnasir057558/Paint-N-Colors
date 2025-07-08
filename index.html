@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A creative painting website built using HTML, CSS and Bootstrap.">
+    <meta name="keywords" content="Landing Page, Responsive Webpage, HTML, CSS, Bootstrap">
+    <meta name="author" content="Muhammad Bilal Nasir">
+    <title>Paint N Colors - Artistic Paintings and Wall Art</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 80px;
+        }
+        .card-img-top {
+            object-fit: cover;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease;
+        }
+        footer #contact_info a:hover {
+            border-bottom: 1px solid white;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navigation">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm fixed-top" id="navigation">
+            <div class="container">
+                <a href="#" class="navbar-brand fw-bold">Paint N Colors</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav_bar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav_bar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal"
+                                data-bs-target="#modalContact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <img src="gallery-wall-designs-1-1.jpg" alt="Painting Image" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-12 col-md-6 text-md-start text-center mt-2">
+                    <h1 class="display-5 fw-bold">Paint N Colors</h1>
+                    <p class="lead">We provide imaginations and colors to your home and life. Here you'll find most
+                        aesthetic and calming paintings related to nature and beauty.</p>
+                    <a href="#categories" class="btn btn-primary btn-lg">Explore Categories</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Categories Section -->
+        <section class="container my-5" id="categories">
+            <h2 class="text-center display-6 mb-4 fw-bold">Explore Our Categories</h2>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="Categories/Islamic-Painting.jpg" alt="Islamic Painting" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Islamic Painting</h3>
+                            <p class="card-text">Our Islamic Calligraphy and Paintings are very famous due to their
+                                spiritual and peaceful energy.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="Categories/landscape-paintings.jpg" alt="Nature Painting" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Nature Painting</h3>
+                            <p class="card-text">Nature Art in house is like taking a slice out of the natural beauty of
+                                the earth and bringing it home.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="Categories/abstract-paintings.jpg" alt="Abstract Painting" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Abstract Painting</h3>
+                            <p class="card-text">When decorating homes, abstract paintings
+                                are the way to as the colour scheme can match the room very well.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="Categories/wildlife-paintings.jpg" alt="Wildlife Painting" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Wildlife Painting</h3>
+                            <p class="card-text">Whether you have a favourite animal or not, wildlife paintings are a
+                                good choice for people who love animals.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="Categories/london-local-paintings.jpg" alt="Local Views" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Local Views</h3>
+                            <p class="card-text">Local view paintings are generally calm and tranquil,
+                                they transport the viewer to a lovely place.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="Categories/custom-image.jpeg" alt="Custom Painting" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Custom Painting</h3>
+                            <p class="card-text">If you have a unique idea, We'll create customized art tailored to your
+                                demand and interests.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About us Section  -->
+        <section class="container my-5 p-5 border rounded shadow-sm" id="about">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="Categories/about-us2.jpg" alt="About Paint N Colors"
+                        class="img-fluid w-100 border rounded shadow-sm">
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="display-5 fw-bold mt-4 mt-md-0">About Paint N Colors</h1>
+                    <p class="lead">We started with a vision to bring soulful and calming artwork into everyday homes,
+                        workplaces, and personal spaces. </p>
+                    <p>In a world filled with noise and distraction, we believe art can restore balance, reflect
+                        identity, and inspire emotion. Our curated collection of paintings — from Islamic calligraphy to
+                        natural landscapes — is designed to add not just beauty, but meaning to your walls.</p>
+                    <p>Paint N Colors empowers both art lovers and talented artists by offering high-quality,
+                        affordable, and customizable artwork for everyone.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing / Call to Action Section  -->
+        <section class="container my-5" id="pricing">
+            <h2 class="text-center display-6 fw-bold mb-4 ">Affordable Pricing for Every Art Lover</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card text-center border-primary h-100 shadow-sm">
+                        <div class="card-header text-bg-primary">
+                            <h4>Starter</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title display-6">Rs. 999 <small
+                                    class="text-muted fw-light"> / piece</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Small size (A4)</li>
+                                <li>Printed painting</li>
+                                <li>Popular designs</li>
+                                <li>Home delivery</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center border-success border-3 h-100 shadow-sm">
+                        <div class="card-header text-bg-primary">
+                            <h4>Standard <span class="badge bg-warning text-dark ms-2">Most Popular</span></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title display-6">Rs. 1999<small
+                                    class="text-muted fw-light"> / piece</small> </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Medium size (A3)</li>
+                                <li>Framed print</li>
+                                <li>Trending designs</li>
+                                <li>Free delivery</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center border-primary h-100 shadow-sm">
+                        <div class="card-header text-bg-primary">
+                            <h4>Custom</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title display-6">Different Prices</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Any size & design</li>
+                                <li>Hand-painted artwork</li>
+                                <li>Name / quote customization</li>
+                                <li>Delivery & framing options</li>
+                            </ul>
+                            <a href="#modalContact" data-bs-toggle="modal" class="btn btn-outline-primary w-100">Find
+                                price for custom art</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Contact Form Section  -->
+        <div class="modal fade" id="modalContact">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Contact Us</h1>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-floating mb-2">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <select id="country" name="country" class="form-select" required>
+                                    <option selected disabled>Select your country</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="UAE">UAE</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">UK</option>
+                                </select>
+                                <label for="country">Country</label>
+                                
+                            </div>
+                            <div class="form-floating mb-2">
+                                <textarea id="message" name="message" class="form-control" placeholder="Message" rows="3"
+                                    required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer  -->
+    <footer class="text-bg-dark mt-5 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">Paint N Colors</h4>
+                    <p>We bring soulful, meaningful, and affordable artwork to your doorstep. Make your walls speak with
+                        our unique paintings.</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-decoration-none text-light">About Us</a></li>
+                        <li><a href="#categories" class="text-decoration-none text-light">Categories</a></li>
+                        <li><a href="#pricing" class="text-decoration-none text-light">Pricing</a></li>
+                        <li><a href="#modalContact" data-bs-toggle="modal"
+                                class="text-decoration-none text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4" id="contact_info">
+                    <h5 class="fw-bold">Contact Info</h5>
+                    <p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:paintNcolorsSupport@gmail.com" class="text-decoration-none text-light">paintNcolorsSupport@gmail.com</a></p>
+                    <p><i class="bi bi-telephone-fill me-2"></i><a href="tel:0330-1234567" class="text-decoration-none text-light">0330-1234567</a></p>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Karachi, Pakistan</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+                
+            </div>
+            <hr class="border-light">
+
+            <div class="text-center small">
+                &copy; 2025 Paint N Colors. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
